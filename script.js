@@ -1,9 +1,27 @@
 const taskList = document.getElementById('task-list');
 const taskInput = document.getElementById('task');
+const alertBox = document.getElementById('alert-box');
+
+function showAlert(message) {
+    alertBox.textContent = message;
+    alertBox.style.display = 'block';
+
+    setTimeout(() => {
+        alertBox.style.display = 'none';
+    }, 2000);
+}
 
 function addTask() {
     const taskText = taskInput.value.trim();
-    if (taskText === '') return;
+    if (taskText === '') {
+        showAlert('Task title cannot be empty!');
+        return;
+    }
+
+    if (taskText.length > 20) { 
+        showAlert('Task title is too long! Maximum 20 characters allowed.');
+        return;
+    }
 
     const li = document.createElement('li');
     li.innerHTML = `
@@ -14,6 +32,7 @@ function addTask() {
 
     taskList.appendChild(li);
     taskInput.value = '';
+    showAlert('Task added successfully!');
 }
 
 function toggleComplete(checkbox) {
@@ -22,4 +41,5 @@ function toggleComplete(checkbox) {
 
 function deleteTask(button) {
     button.parentNode.remove();
+    showAlert('Task deleted successfully!');
 }
