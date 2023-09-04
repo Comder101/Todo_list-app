@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.delete-button {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
