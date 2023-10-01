@@ -5,7 +5,7 @@ git clone 'repo-link'
 ##### 1. npm init -y
 ##### 2. npm install express body-parser
 ##### 3. node server.js
-#### then open the index.html file in web browser.
+#### then open the index.html file in web browser. Link for livesite (https://todo-listm.onrender.com).
 
 ![image](https://github.com/Comder101/Todo_list-app/assets/86362195/9fca66d7-c307-4b71-8076-1a351f7587a0)
 
